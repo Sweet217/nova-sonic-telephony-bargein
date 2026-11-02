@@ -1,0 +1,6 @@
+# Real Amazon Nova 2 Sonic backend. The experimental Smithy-based AWS SDK for
+# Python needs Python >= 3.12 (it does not install on the repo's 3.11 venv).
+aws_sdk_bedrock_runtime==0.12.0
+numpy>=2.0
+scipy>=1.13      # for bench.e2e's simulated phone line
+websockets>=13

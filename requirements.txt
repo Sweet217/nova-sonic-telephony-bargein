@@ -1,0 +1,5 @@
+numpy>=2.0
+scipy>=1.13          # testbed only (echo-path colouration filter); the bridge itself is pure numpy
+matplotlib>=3.8      # benchmark plots
+websockets>=13
+pytest>=8

@@ -1,0 +1,292 @@
+{
+  "note": "Real-time localhost websocket run with the mock Nova backend (not real Nova). No network delay added. Benign line (echo delay 100 ms, ERL 30 dB, noise -60 dBFS) so that the run isolates stop latency; false barge-ins are studied in the simulator.",
+  "generated_unix": 1793587645,
+  "runtime_s": 112.67223405838013,
+  "results": {
+    "naive (no client handler)": {
+      "calls": [
+        {
+          "onset_ms": 3534.2967209358712,
+          "first_heard_ms": 341.18866700009676,
+          "stop_latency_ear_ms": null,
+          "clears": [],
+          "still_talking_at_onset_plus_4s": true,
+          "bot_frames_heard": 361,
+          "call": 0,
+          "server_latency_ms": 400.49448915060265,
+          "server_detect_ms": [
+            3652.1110000012413
+          ],
+          "local_detect_ms": [],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 3041.7053586831116,
+          "first_heard_ms": 322.86329199996544,
+          "stop_latency_ear_ms": null,
+          "clears": [],
+          "still_talking_at_onset_plus_4s": true,
+          "bot_frames_heard": 336,
+          "call": 1,
+          "server_latency_ms": 433.05975168316616,
+          "server_detect_ms": [
+            3151.3243329991383
+          ],
+          "local_detect_ms": [],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 3475.627738680067,
+          "first_heard_ms": 303.74070899961225,
+          "stop_latency_ear_ms": null,
+          "clears": [],
+          "still_talking_at_onset_plus_4s": true,
+          "bot_frames_heard": 360,
+          "call": 2,
+          "server_latency_ms": 197.9973435012911,
+          "server_detect_ms": [
+            3670.94595799972
+          ],
+          "local_detect_ms": [],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 2752.2911952517184,
+          "first_heard_ms": 303.65474999962316,
+          "stop_latency_ear_ms": 3311.1843887479613,
+          "clears": [],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 288,
+          "call": 3,
+          "server_latency_ms": 243.80496981688427,
+          "server_detect_ms": [
+            2871.8334999994113
+          ],
+          "local_detect_ms": [],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 3686.935964255825,
+          "first_heard_ms": 302.6396670011309,
+          "stop_latency_ear_ms": null,
+          "clears": [],
+          "still_talking_at_onset_plus_4s": true,
+          "bot_frames_heard": 371,
+          "call": 4,
+          "server_latency_ms": 401.5694437108607,
+          "server_detect_ms": [
+            3892.475167000157
+          ],
+          "local_detect_ms": [],
+          "bot_stopped_before_onset": false
+        }
+      ],
+      "n": 5,
+      "n_with_latency": 1,
+      "n_bot_stopped_before_caller_spoke": 0,
+      "n_still_talking_4s_after_onset": 4,
+      "stop_latency_ear_p50_ms": 3311.1843887479613,
+      "stop_latency_ear_max_ms": 3311.1843887479613
+    },
+    "server signal only": {
+      "calls": [
+        {
+          "onset_ms": 3518.644178935191,
+          "first_heard_ms": 325.53612499941664,
+          "stop_latency_ear_ms": 584.7879880638548,
+          "clears": [
+            4088.8669999985723
+          ],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 189,
+          "call": 0,
+          "server_latency_ms": 400.49448915060265,
+          "server_detect_ms": [
+            3650.395832999493
+          ],
+          "local_detect_ms": [],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 3021.0726506817537,
+          "first_heard_ms": 302.2305839986075,
+          "stop_latency_ear_ms": 601.1459743175419,
+          "clears": [
+            3602.5404590000107
+          ],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 166,
+          "call": 1,
+          "server_latency_ms": 433.05975168316616,
+          "server_detect_ms": [
+            3132.5346670000727
+          ],
+          "local_detect_ms": [],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 3475.471279679858,
+          "first_heard_ms": 303.58424999940326,
+          "stop_latency_ear_ms": 447.91301231996977,
+          "clears": [
+            3909.540916998594
+          ],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 181,
+          "call": 2,
+          "server_latency_ms": 197.9973435012911,
+          "server_detect_ms": [
+            3671.353874999113
+          ],
+          "local_detect_ms": [],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 2752.627945252943,
+          "first_heard_ms": 303.99150000084774,
+          "stop_latency_ear_ms": 411.4200547471687,
+          "clears": [
+            3156.7236669998238
+          ],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 143,
+          "call": 3,
+          "server_latency_ms": 243.80496981688427,
+          "server_detect_ms": [
+            2873.82208300005
+          ],
+          "local_detect_ms": [],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 3687.750756253807,
+          "first_heard_ms": 303.45445899911283,
+          "stop_latency_ear_ms": 654.9492437449967,
+          "clears": [
+            4328.340124999158
+          ],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 202,
+          "call": 4,
+          "server_latency_ms": 401.5694437108607,
+          "server_detect_ms": [
+            3891.1231249985576
+          ],
+          "local_detect_ms": [],
+          "bot_stopped_before_onset": false
+        }
+      ],
+      "n": 5,
+      "n_with_latency": 5,
+      "n_bot_stopped_before_caller_spoke": 0,
+      "n_still_talking_4s_after_onset": 0,
+      "stop_latency_ear_p50_ms": 584.7879880638548,
+      "stop_latency_ear_max_ms": 654.9492437449967
+    },
+    "server + local VAD + echo guard": {
+      "calls": [
+        {
+          "onset_ms": 3516.320886935845,
+          "first_heard_ms": 323.21283300007053,
+          "stop_latency_ear_ms": 66.72798806352239,
+          "clears": [
+            3564.1283329987345
+          ],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 163,
+          "call": 0,
+          "server_latency_ms": 400.49448915060265,
+          "server_detect_ms": [
+            3652.3941249997733
+          ],
+          "local_detect_ms": [
+            3561.6898330008553
+          ],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 3022.638691684415,
+          "first_heard_ms": 303.7966250012687,
+          "stop_latency_ear_ms": 63.47201631694588,
+          "clears": [
+            3067.0336250004766
+          ],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 139,
+          "call": 1,
+          "server_latency_ms": 433.05975168316616,
+          "server_detect_ms": [
+            3151.3139580001734
+          ],
+          "local_detect_ms": [
+            3063.5196669991274
+          ],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 3497.0031546795676,
+          "first_heard_ms": 325.1161249991128,
+          "stop_latency_ear_ms": 66.68176132005237,
+          "clears": [
+            3545.787666000251
+          ],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 162,
+          "call": 2,
+          "server_latency_ms": 197.9973435012911,
+          "server_detect_ms": [
+            3689.8230419992615
+          ],
+          "local_detect_ms": [
+            3541.82050000054
+          ],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 2751.975611253119,
+          "first_heard_ms": 303.33916600102384,
+          "stop_latency_ear_ms": 73.22080474728,
+          "clears": [
+            2806.8317500001285
+          ],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 126,
+          "call": 3,
+          "server_latency_ms": 243.80496981688427,
+          "server_detect_ms": [
+            2891.7907499999274
+          ],
+          "local_detect_ms": [
+            2803.578708000714
+          ],
+          "bot_stopped_before_onset": false
+        },
+        {
+          "onset_ms": 3688.701839256099,
+          "first_heard_ms": 304.4055420014047,
+          "stop_latency_ear_ms": 75.34182774427018,
+          "clears": [
+            3745.2701250003884
+          ],
+          "still_talking_at_onset_plus_4s": false,
+          "bot_frames_heard": 173,
+          "call": 4,
+          "server_latency_ms": 401.5694437108607,
+          "server_detect_ms": [
+            3871.727916999589
+          ],
+          "local_detect_ms": [
+            3742.0860420006647
+          ],
+          "bot_stopped_before_onset": false
+        }
+      ],
+      "n": 5,
+      "n_with_latency": 5,
+      "n_bot_stopped_before_caller_spoke": 0,
+      "n_still_talking_4s_after_onset": 0,
+      "stop_latency_ear_p50_ms": 66.72798806352239,
+      "stop_latency_ear_max_ms": 75.34182774427018
+    }
+  }
+}

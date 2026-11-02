@@ -1,0 +1,16 @@
+.venv/
+.venv-*/
+__pycache__/
+*.pyc
+.pytest_cache/
+.cache/
+results_dev/
+results_quick/
+# audio is synthesised at run time; never commit recordings
+*.wav
+*.aiff
+*.s16
+*.raw
+*.mp3
+.DS_Store
+.env
