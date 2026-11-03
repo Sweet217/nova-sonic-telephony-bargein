@@ -170,6 +170,19 @@ The bridge knows exactly what it played, so it uses that audio as the reference 
 
 The doc includes draft PR descriptions. Nothing has been submitted.
 
+## Author and how this was built
+
+Gabriel Velázquez Berrueta, software engineer (B.Eng., Universidad de Colima)
+working on LLM and voice systems, with HCI research presented at MexIHC 2026.
+[LinkedIn](https://www.linkedin.com/in/gabriel-velazquez-berrueta-53a3b925a/)
+
+This project was built with Claude Code as a coding agent. I chose the problem,
+set the ground rules (synthetic audio only, no number in this README that did not
+come from a run, mock results labelled as mock, no paid AWS calls without a cost
+estimate first) and reviewed the results; Claude Code wrote most of the
+implementation and ran the testbed. Commits carry a `Co-Authored-By: Claude`
+trailer.
+
 ## License
 
 MIT © 2026 Gabriel Velázquez. Speech is synthesised locally with macOS `say`; no recordings are included.
